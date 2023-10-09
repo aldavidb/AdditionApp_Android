@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Addition App</string>
+    <string name="number_1_hint">First Number</string>
+    <string name="number_2_hint">Second Number</string>
+    <string name="button_hint">Add the Numbers!</string>
+    <string name="sumTotal_hint">Sum Displayed Here!</string>
+
+</resources>

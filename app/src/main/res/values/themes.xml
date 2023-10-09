@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AdditionApp" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+
+    <style name="Theme.AdditionApp" parent="Base.Theme.AdditionApp" />
+
+    <!-- Base theme for all widgets -->
+    <style name="TextStyle" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">220dp</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Theme for all EditText widgets -->
+    <style name="EditTextStyle" parent="TextStyle">
+        <item name="android:textColor">@color/violet</item>
+        <item name="android:backgroundTint">@color/blue</item>
+        <item name="android:textColorHint">@color/pink</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Theme for Button and TextView widgets -->
+    <style name="BtnViewStyle" parent="TextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:backgroundTint">@color/spearmint</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@color/taupe</item>
+        <item name="android:textColorHint">@color/indigo</item>
+        <item name="android:fontFamily">serif</item>
+    </style>
+</resources>

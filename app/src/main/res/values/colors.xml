@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Used in Action Bar -->
+    <color name="colorPrimary">#FF3F51B5</color>
+    <color name="colorPrimaryDark">#FF303F9F</color>
+    <color name="colorAccent">#FFFF4081</color>
+    <!-- Default Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Used in EditText theme -->
+    <color name="violet">#FFB200ED</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="pink">#FFFFC0CB</color>
+    <color name="babyBlue">#FF89CFF0</color>
+    <!-- Used in Button and TextView theme -->
+    <color name="spearmint">#FF64BFA4</color>
+    <color name="indigo">#FF281E5D</color>
+    <color name="taupe">#FF4D453A</color>
+</resources>

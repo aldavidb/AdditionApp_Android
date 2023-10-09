@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <!-- NOTE: The following 4 widgets are chained horizontally to ensure
+               they are all centered horizontally with relation to one another -->
+
+    <!-- First edit text to allow the user to enter an integer value -->
+    <EditText
+        android:id="@+id/label_num1"
+        style="@style/EditTextStyle"
+        android:layout_marginStart="8dp"
+        android:hint="@string/number_1_hint"
+        android:inputType="number|numberSigned"
+        app:layout_constraintBottom_toTopOf="@+id/label_num2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <!-- Second edit text to allow the user to enter an integer value -->
+    <EditText
+        android:id="@+id/label_num2"
+        style="@style/EditTextStyle"
+        android:layout_marginStart="8dp"
+        android:hint="@string/number_2_hint"
+        android:inputType="number|numberSigned"
+        app:layout_constraintBottom_toTopOf="@+id/sumbitBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_num1" />
+
+    <!-- Text view to display a hint, followed by the sum of both EditTexts when button is clicked -->
+    <TextView
+        android:id="@+id/sumTotal"
+        style="@style/BtnViewStyle"
+        android:layout_marginStart="8dp"
+        android:hint="@string/sumTotal_hint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sumbitBtn" />
+
+    <!-- Button to instruct the app to add and display both EditText values -->
+    <Button
+        android:id="@+id/sumbitBtn"
+        style="@style/BtnViewStyle"
+        android:layout_marginStart="8dp"
+        android:hint="@string/button_hint"
+        android:onClick="calculateSum"
+        app:layout_constraintBottom_toTopOf="@+id/sumTotal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_num2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
